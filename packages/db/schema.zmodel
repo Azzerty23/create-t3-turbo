@@ -54,6 +54,10 @@ model User {
     image         String?
     accounts      Account[]
     sessions      Session[]
+
+    @@openapi.meta({
+        description: "A user of the application"
+    })
 }
 
 model VerificationToken {
